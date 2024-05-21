@@ -87,7 +87,7 @@ validate_userarch() {
                 echo "Unsupported devarch"; exit 1 ;;
         esac
 
-        echo "wget https://github.com/NobDev69/multiversionsubuntuontermux/raw/main/qemu/$qemu -O $qemu"
+        echo "wget https://github.com/NobDev69/TermuxUbuntuVersionMultiArchInstaller/raw/main/$qemu -O $qemu"
         echo "chmod 777 $qemu"
         echo "mv $qemu ~/../usr/bin"
     fi
