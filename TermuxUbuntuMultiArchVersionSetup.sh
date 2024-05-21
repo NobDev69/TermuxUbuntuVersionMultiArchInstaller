@@ -174,6 +174,7 @@ setup_ubuntu_fs
 create_start_ubuntu_script
 setup_pulseaudio
 
+(echo "nameserver 8.8.8.8"; echo "nameserver 1.1.1.1") | tee ubuntu-fs-$userarch/etc/resolv.conf
 echo "Removing image for some space"
 rm "ubuntu-rootfs.tar.gz"
 echo "You can now launch Ubuntu with the ./${bin} script"
